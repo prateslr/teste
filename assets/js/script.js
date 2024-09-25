@@ -1,3 +1,4 @@
+/* Efeito de marcação de section */
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav ul li a');

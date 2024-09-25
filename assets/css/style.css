@@ -86,17 +86,17 @@ header {
 }
 
 .home-text h1 {
-  font-size: 43px;
+  font-size: 67px;
+  margin: 0 0 20px 0;
+  position: relative;
 
   color: #eb1f1f;
   text-shadow:
     0 0 5px #d63c3c,
     0 0 10px #d63c3c,
-    0 0 15px #d63c3c,
     0 0 20px #d63c3c,
     0 0 30px #d63c3c,
-    0 0 40px #d63c3c,
-    0 0 50px #d63c3c;
+    0 0 40px #d63c3c;
 }
 
 .home-text p {
@@ -104,19 +104,18 @@ header {
 }
 
 .img-person {
-  width: 550px;
-
-  position: absolute;
-  margin-left: -50px;
-  margin-top: 28px;
+  width: calc(100% + 100px);
 }
 
 .box {
   width: 450px;
   height: 450px;
 
+  display: grid;
+  place-items: center;
+
   background: #eb1f1f;
-  border-radius: 23% 77% 28% 72% / 65% 33% 67% 35% ;
+  border-radius: 56% 44% 79% 21% / 63% 66% 34% 37%;
 
   box-shadow:
     0 0 5px #d63c3c,
