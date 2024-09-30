@@ -1,2 +1,2 @@
 # teste
-https://pratestech.github.io/teste/index.html
+https://prateslr.github.io/teste/index.html
