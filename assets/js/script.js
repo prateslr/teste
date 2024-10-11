@@ -24,6 +24,6 @@ window.addEventListener('scroll', () => {
 
 /* rolagem menu */
 window.addEventListener("scroll", function(){
-    let header = document.querySelector('#header')
-    header.classList.toggle('rolagem', window.scrollY > 100)
+    let nav = document.querySelector('#nav')
+    nav.classList.toggle('rolagem', window.scrollY > 100)
 })
