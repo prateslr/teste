@@ -16,14 +16,17 @@
 <body>
   <header id="header">
     <nav id="nav">
-      <a href="#"><i class="fa-solid fa-ghost"></i></a>
+      <a href="#"><i id="logo" class="fa-solid fa-ghost"></i></a>
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Portifolio</a></li>
       </ul>
+      <button id="modeToggle" onclick="toggleMode()">
+        <i id="icon" class="fas fa-sun"></i>
+      </button>
       <div class="btn-contato">
-        <a href="#"><button>Contact</button></a>
+        <a href="#contact"><button>Contact</button></a>
       </div>
     </nav>   
   </header>
@@ -35,7 +38,7 @@
       </div>
       <div class="home-text">
         <h1>Lucas Prates</h1>
-        <p>
+        <p id="text">
           Sou Desenvolvedor Web Junior, com experiência em HTML, CSS e Javascript. Estou sempre em busca de novos desafios e oportunidades para 
           crescer como profissional.
         </p>
@@ -55,19 +58,21 @@
         <img class="about-person" src="assets/img/persona.png" alt="Persona 3D">
       </div>
       <div class="about-text">
-        <h1>About Us</h1>
-        Olá me chamo Lucas Prates, tenho 16 anos moro em Ribeiraão Pires - Sp, estou no 3°(terceiro) ano na escola
-        ETEC MCM cursando Informática para Internet, onde me encaixei mais no frontend mas estou me dedicando para 
-        me tornar um fullstack. Quero trabalhar como programador mais pela oportunidade de trabalhar do conforto de 
-        sua casa, também estudo por fora sobre mercado financeiro pois quero realizar meus sonhos.  <br>
-        <br>Alguns de meus gostos são cachorros, comida, esportes, jogos e dinheiro. Meu sonho de longo prazo é aposentar 
-        minha familia e alquançar minha liberdade financeira.
+        <h1 id="tittle">About Us</h1>
+        <p id="text">
+          Olá me chamo Lucas Prates, tenho 16 anos moro em Ribeiraão Pires - Sp, estou no 3°(terceiro) ano na escola
+          ETEC MCM cursando Informática para Internet, onde me encaixei mais no frontend mas estou me dedicando para 
+          me tornar um fullstack. Quero trabalhar como programador mais pela oportunidade de trabalhar do conforto de 
+          sua casa, também estudo por fora sobre mercado financeiro pois quero realizar meus sonhos.  <br>
+          <br>Alguns de meus gostos são cachorros, comida, esportes, jogos e dinheiro. Meu sonho de longo prazo é aposentar 
+          minha familia e alquançar minha liberdade financeira.
+        </p>
       </div>
     </div> 
   </section>
 
   <section class="projects" id="projects">
-    <h1>Projects</h1>
+    <h1 id="tittle">Projects</h1>
     <div class="link">
       <a href="#">All</a>
       <a href="#">Andamento</a>
@@ -83,9 +88,61 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <footer>
+    <div class="footer-contact">
+      <div class="contacts">
+        <div class="whatsapp">
+          <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <div class="text">
+            <h2>+55 11963939709</h2>
+            <p>Seg-Sex 9am-6pm</p>
+          </div>
+      </div>
+      <div class="email">
+          <a href="#" class="footer-link" id="email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <div class="text">
+            <h2>lucas.rprates077@gmail.com</h2>
+            <p>Active</p>
+          </div>
+      </div>
+      <div class="locate">
+          <a href="#" class="footer-link" id="locate">
+            <i class="fa-solid fa-map-pin"></i>
+          </a>
+          <div class="text">
+            <h2>Ribeirão Pires, Brasil</h2>
+            <p>RP 09402-560, Brasil</p>
+          </div>
+      </div>
+      </div>   
+    </div>
 
-  </section>
+    <div class="footer-sociais">
+      <p>social media</p>
+      <div class="social-links">
+        <a href="#"  class="social-link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/prateslr/" class="social-link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; Desenvolvido por Lucas
+    </div>
+  </footer>
 
   <script src="assets/js/script.js"></script>
 </body>

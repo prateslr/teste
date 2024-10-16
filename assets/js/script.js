@@ -22,8 +22,23 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* rolagem menu */
+/* Rolagem menu */
 window.addEventListener("scroll", function(){
     let nav = document.querySelector('#nav')
     nav.classList.toggle('rolagem', window.scrollY > 100)
 })
+
+/* Dark mode*/
+function toggleMode() {
+    const body = document.body;
+    const icon = document.getElementById('icon');
+    const isDarkMode = body.classList.toggle('light');
+
+    if (isDarkMode) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    };
+};
