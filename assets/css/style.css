@@ -12,16 +12,12 @@
 
 /* Dark mode Class */
 body.light nav.rolagem {
-  background: #2c2c2c36;
+  background: #2c2c2c00;
   backdrop-filter: blur(2px);
-  border: #000;
+  border: 1px solid #000;
 }
 
-body.light nav.rolagem a {
-  color: #fff;
-}
-
-body.light a {
+body.light nav a {
   color: #000;
 }
 
@@ -137,6 +133,7 @@ header {
 nav {
   width: 100%;
   padding: 40px;
+  position: relative;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -161,8 +158,21 @@ nav.rolagem{
   padding: 20px;
 }
 
-nav.rolagem #logo{
-  color: #7c3ee9;
+nav.rolagem .logo img {
+  top: -55px;
+}
+
+.logo {
+  width: 1px;
+  height: 1px;
+}
+
+.logo img {
+  position: absolute;
+  width: 200px;
+  top: -36px;
+  left: -9px;
+  transition: .5s;
 }
 
 nav i{
@@ -290,8 +300,6 @@ nav i{
     0 0 40px #6f2ed6,
     0 0 50px #6f2ed6;
 }
-
-
 
 /* Services */
 #services {
@@ -487,7 +495,7 @@ footer {
 .contacts {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-link {
