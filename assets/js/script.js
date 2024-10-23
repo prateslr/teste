@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
       }
   });
 });
-
+ 
 /* Rolagem menu */
 window.addEventListener("scroll", function(){
     let nav = document.querySelector('#nav')
@@ -42,3 +42,18 @@ function toggleMode() {
         icon.classList.add('fa-sun');
     };
 };
+
+/* Top Button */
+window.onscroll = function() {
+    const button = document.getElementById('scrollToTop');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+document.getElementById('scrollToTop').onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+};
+

@@ -16,9 +16,7 @@
 <body>
   <header id="header">
     <nav id="nav">
-      <a class="logo" href="#">
-        <img src="assets/img/logo.ico" alt="">
-      </a>
+      <img class="logo" src="assets/img/perfil.png" alt="">
       <ul class="nav-list">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -31,7 +29,11 @@
         <a href="#footer"><button>Contact</button></a>
       </div>
     </nav>   
-  </header>
+  </header><!--end header-->
+
+  <button id="scrollToTop" style="display: none;">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button><!--end top button-->
 
   <section class="home" id="home">
     <div class="home-container">
@@ -46,13 +48,13 @@
         </p>
       </div>
     </div>
-  </section>
+  </section><!--end home-->
 
   <div class="services" id="services">
     <img src="assets/img/js.png" alt="Imagem logo Javascript">
     <img src="assets/img/php.png" alt="Imagem logo PHP">
     <img src="assets/img/java.png" alt="Imagem logo PHP">
-  </div>
+  </div><!--end services-->
 
   <section class="about" id="about">
     <div class="flex">
@@ -71,11 +73,11 @@
         </p>
       </div>
     </div> 
-  </section>
+  </section><!--end about-->
 
   <section class="projects" id="projects">
     <h1 id="tittle">Projects</h1>
-    <div class="link">
+    <div class="path">
       <a href="#">All</a>
       <a href="#">Andamento</a>
       <a href="#">Finalizados</a>
@@ -88,7 +90,7 @@
       <div class="box-proj"></div>
       <div class="box-proj"></div>
     </div>
-  </section>
+  </section><!--end projects-->
 
   <footer id="footer">
     <div class="footer-contact">
@@ -144,7 +146,18 @@
     <div class="copyright">
       &copy; Desenvolvido por Lucas
     </div>
-  </footer>
+  </footer><!--end footer-->
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script><!--end vlibras-->
 
   <script src="assets/js/script.js"></script>
 </body>

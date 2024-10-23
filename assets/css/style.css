@@ -67,13 +67,13 @@ body.light .box {
   border-radius: 56% 44% 79% 21% / 63% 66% 34% 37%;
 
   box-shadow:
+    0 0 2px #7426fa,
     0 0 5px #7426fa,
     0 0 10px #7426fa,
     0 0 15px #7426fa,
-    0 0 20px #7426fa,
+    0 0 21px #7426fa,
     0 0 30px #7426fa,
-    0 0 40px #7426fa,
-    0 0 50px #7426fa;
+    0 0 70px #7426fa;
 }
 
 body.light .home-text h1 {
@@ -83,11 +83,47 @@ body.light .home-text h1 {
 
   color: #7426fa;
   text-shadow:
+    0 0 2px #7426fada,
     0 0 5px #7426fada,
     0 0 10px #7426fada,
-    0 0 20px #7426fada,
-    0 0 30px #7426fada,
-    0 0 40px #7426fada;
+    0 0 21px #7426fada,
+    0 0 30px #7426fada;
+}
+
+body.light .path a {
+  color: #000;
+  text-decoration: none;
+}
+
+body.light .path {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Top Button*/
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  background: #007bff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+}
+
+#scrollToTop:hover {
+  background-color: #0056b3;
+}
+
+#scrollToTop i {
+  font-size: 22px;
+  color: #fff;
 }
 
 /* Geral */
@@ -158,21 +194,8 @@ nav.rolagem{
   padding: 20px;
 }
 
-nav.rolagem .logo img {
-  top: -55px;
-}
-
 .logo {
-  width: 1px;
-  height: 1px;
-}
-
-.logo img {
-  position: absolute;
-  width: 200px;
-  top: -36px;
-  left: -9px;
-  transition: .5s;
+  width: 30px;
 }
 
 nav i{
@@ -420,18 +443,18 @@ nav i{
     0 0 9px #7c3ee9da;
 }
 
-.link {
+.path {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.link a {
+.path a {
   text-align: center;
   font-family: 'poppins';
 }
 
-.link a:hover {
+.path a:hover {
   color: #7c3ee9;
 }
 
