@@ -41,6 +41,14 @@ body.ligh nav.rolagem #icon.fa-moon {
   color: #fff;
 }
 
+body.light #logo {
+  color: #000;
+}
+
+body.light nav.rolagem #logo {
+  color: #000;
+}
+
 body.light .nav-link.active {
   color: #9b61ff;
 }
@@ -99,6 +107,8 @@ body.light .path {
   color: #000;
   text-decoration: none;
 }
+
+
 
 /* Top Button*/
 #scrollToTop {
@@ -194,8 +204,8 @@ nav.rolagem{
   padding: 20px;
 }
 
-.logo {
-  width: 30px;
+#logo {
+  color: #fff;
 }
 
 nav i{

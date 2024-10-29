@@ -56,4 +56,3 @@ window.onscroll = function() {
 document.getElementById('scrollToTop').onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 };
-
